@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import RegistrationForm from './components/RegistrationForm';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'tachyons';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div className="bg-dark m-0 p-1 justify-content-center align-items-center" style={{height:'100vh', display:"flex"}}>
+    <div className="container w-25 bg-dark"  >
+      < RegistrationForm/>
+    </div>
+  </div>,
   document.getElementById('root')
 );
 
